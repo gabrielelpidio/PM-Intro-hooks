@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400;700&display=swap");
+
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+body {
+  @apply font-sans;
+  @apply text-gray-800;
+  margin: 0;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
+.row-container {
+  @apply pb-4;
+  @apply w-full;
+  @apply grid;
+  @apply gap-2;
+  @apply grid-cols-1;
+  @apply justify-items-center;
+}
+
+.row-content * {
+  @apply p-2;
+  @apply h-16;
+}
+
+.form-c {
+  @apply bg-yellow-500;
+  @apply px-6;
+  @apply py-2;
+  @apply rounded-md;
+  @apply font-abril;
+  @apply text-2xl;
+  width: 75%;
+}
+
+.form-c .row-title {
+  @apply text-yellow-700;
+}
+
+.form-c input {
+  @apply p-2;
+  @apply w-full;
+  @apply text-center;
+  @apply bg-yellow-500;
+  @apply rounded-lg;
+  outline: 0;
+}
+
+.form-c input:focus {
+  @apply bg-yellow-600;
+}
+
+.form-f {
+  @apply bg-red-500;
+  @apply px-6;
+  @apply py-2;
+  @apply rounded-md;
+  font-family: Lato;
+  @apply text-2xl;
+  width: 75%;
+}
+
+.form-f span {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  @apply w-full;
+  @apply text-white;
+}
+
+.form-f .row-title {
+  @apply font-bold;
+  @apply text-xl;
+  @apply text-red-300;
+}
+
+.form-f input {
+  @apply text-center;
+  @apply text-white;
+  width: 100%;
+  @apply bg-red-500;
+  @apply rounded-lg;
+  outline: 0;
+}
+
+.form-f input:focus {
+  @apply bg-red-600;
+}
+
+section {
+  display: grid;
+  @apply max-w-sm;
+  @apply gap-4;
+  height: min-content;
+  grid-auto-rows: min-content;
+  @apply grid-cols-1;
+}
